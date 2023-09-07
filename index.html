@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+   <form action="procesar.php" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required><br>
+
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" id="contraseña" name="contraseña" required><br>
+
+    <label for="nombre">Nombre de Usuario:</label>
+    <input type="text" id="usuario" name="usuario" required><br>
+
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required><br>
+
+    <div id="telefono_field" style="display: none;">
+        <label for="telefono">Número Telefónico:</label>
+        <input type="tel" id="telefono" name="telefono"><br>
+    </div>
+
+    <label for="nivel">Nivel:</label>
+    <select id="nivel" name="nivel">
+        <option value="1">Baby Ballet (2.5-4 años)</option>
+        <option value="2">Pre Ballet (4-5 años)</option>
+        <option value="3">Principiante (6 años en adelante)</option>
+        <option value="4">Intermedio 1 (Principios técnicos)</option>
+        <option value="5">Intermedio 2 (Previo Conocimiento tecnico)</option>
+        <option value="6">Avanzados</option>
+        <!-- Agrega opciones para otros niveles aquí -->
+    </select><br>
+
+    <!-- Campo de costo (inicialmente oculto y deshabilitado) -->
+    <label for="costo" id="labelCosto" style="display:none;">Costo:</label>
+    <input type="text" id="costo" name="costo" disabled style="display:none;"><br>
+
+    <label for="telefono_tutor">Número Telefónico de Emergencia:</label>
+    <input type="tel" id="telefono_emergencia" name="telefono_emergencia"><br>
+
+    <div id="tutor_fields" style="display: none;">
+        <label for="nombre_tutor">Nombre de Tutor:</label>
+        <input type="text" id="nombre_tutor" name="nombre_tutor"><br>
+
+        <label for="telefono_tutor">Número Telefónico del Tutor:</label>
+        <input type="tel" id="telefono_tutor" name="telefono_tutor"><br>
+    </div>
+
+    <input type="submit" value="Registrar">
+</form>
+
+<script src="javascript/funciones.js"></script>
+</body>
+</html>
