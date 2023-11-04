@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+      ), url(../img/Header_ECBT.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  }
+
+.container-fluid{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+form{
+    width:60%;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 10%;
+}
+
+
+.btn-success{
+    width: 50%;
+    transform: translateX(50%);
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.form-control{
+    color: rgba(0, 0, 0, .87);
+    border-bottom-color: rgba(0, 0, 0, .42);
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+}
+
+h4{
+    font-size: 2rem !important;
+    font-weight: 700;
+}
+
+span{
+    color: blueviolet;
+}
+
+.form-label{
+    font-family: 800 !important;
+}
+
+footer{
+    width: 100%;
+    background-color: #0A141D;
+  }
+  
+  footer .footer-group{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  footer figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  footer figure img{
+  width: 250px;
+  }
+  footer h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  footer p{
+    color: #EFEFEF;
+    margin-bottom: 10px;
+  }
+  footer .footer-group .social-networks a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color: #0D2033;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  footer .footer-group .social-networks .fb-network:hover{
+    background-color: #3b5998;
+  }
+  footer .footer-group .social-networks .ig-network:hover{
+    background-color: #F77737;
+  
+  }
+  footer .footer-group .social-networks .wa-network:hover{
+    background-color: #25D366;
+  }
+  footer .copyright{
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  footer .copyright small{
+    font-size: 15px;
+  }
+  
+
+/* Responsive para el formulario   */
+@media (max-width: 991px){
+    .container-fluid{
+        display: inline-block;
+    }
+    form{
+      width: 80% !important;
+    }
+
+    input::placeholder{
+        font-size: 12px;
+    }
+
+    form h4{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    form label{
+        font-size: 14px;
+    }
+}
+@media (max-width: 600px){
+    form{
+      width: 80% !important;
+    }
+    form h4{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    form label{
+        font-size: 14px;
+    }
+
+    input::placeholder{
+      font-size: 9px;
+  }
+   
+  .label-nivel{
+    float: left;
+  }
+  .select-nivel{
+    float: left;
+  }
+}
+
+/* Responsive para la sección Footer*/
+@media (max-width: 800px){
+    footer .footer-group{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+    }
+  }

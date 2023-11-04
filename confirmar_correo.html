@@ -10,23 +10,14 @@
 </head>
 <body>
     <div class="container-fluid">
-        <form class="mx-auto" action="cambio_contraseña.php" method="post">
-            <h4 class="text-center">Cambiar contraseña</h4>
-            <div class="mb-3 mt-5">
-                <label class="form-label" for="contraseña_actual">Contraseña actual</label>
-                <input class="form-control" type="password" id="contraseña_actual" name="contraseña_actual" required>
+        <form class="mx-auto" action="" method="">
+            <h4 class="text-center">Confirma tu correo</h4>
+            <p class="text-light-emphasis text-center mb-5">Escribe tu dirección de correo electrónico y te enviaremos un correo con los pasos a seguir para poder recuperar tu contraseña. Recuerda revisar la carpeta de Spam, si en caso no llega ningún correo a tu bandeja principal.</p>
+            <div class="mb-3 col-md-12">
+                <label class="form-label" for="correo">Correo electrónico</label>
+                <input class="form-control" type="email" id="correo" name="correo" required>
             </div>
-            <div class="mb-3">
-                <label class="form-label" for="nueva_contrasena">Nueva Contraseña</label>
-                <input class="form-control" type="password" id="nueva_contraseña" name="nueva_contraseña" required>
-                <div id="actual-password-alert" class="text-danger"></div>
-            </div>
-            <div class="mb-3">
-                <label class="form-label" for="confirmar_contrasena">Confirmar Contraseña</label>
-                <input class="form-control"  type="password" id="confirmar_contraseña" name="confirmar_contraseña" required>
-                <div id="password-mismatch-alert" class="text-danger"></div>
-            </div>
-            <button class="btn btn-primary mt-4" type="submit" value="Cambiar Contraseña">Actualizar contraseña</button>
+            <button class="btn btn-primary mt-2" type="submit" value="">Confirmar</button>
         </form>
     </div>
     

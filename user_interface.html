@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/user_interface.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/6a3af0d5cf.js" crossorigin="anonymous"></script>
+  <title>Home User</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/Logo_Blue.png" alt="" width="200px" height="40px">
+      </a>      
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-end">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 list-links">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Generar referencia de pago</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Modificar información personal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Modificar contraseña actual</a>
+            </li>
+          </ul>
+            <li class="nav-item p-1">
+              <button type="button" class="btn btn-danger w-auto">Cerrar sesión</button>
+            </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/Logo_Blue.png" alt="" width="200px" height="40px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse align-content-end navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <button type="button" class="btn btn-danger w-auto">Cerrar sesión</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <section class="user_section ">
+    <div class="general-container mb-3">
+      <div class="container_info text-center text-white m-auto">
+        <h1 class="txt-userInfo">¡Hola, <span>#user</span>!</h1>
+      </div>
+      <div class="container-img align-items-center justify-content-center d-lg-flex">
+        <img class="img-fluid user-img" src="assets/img/img_User_Interface.svg" alt="">
+        <!-- <a href="https://storyset.com/people">People illustrations by Storyset</a> -->
+      </div>
+    </div>
+
+    <hr class="d-flex border border-white border-2 opacity-50 m-auto mb-5">
+
+    <div class="container d-md-block pb-5">
+      <div class="txt-datos text-center text-white pb-4 ">
+        <h2>Información personal</h2>
+      </div>
+      <div class="container-cards-info">
+        <div class="row">
+            <div class="card-dato">
+                <figure>
+                  <i class="fa-solid fa-stairs" style="color: #dde0e4;"></i>
+                </figure>
+                <div class="contenido-card text-white">
+                  <h4>Nivel</h4>
+                  <h5 class="text-white-50">Baby Ballet</h5>
+                </div>
+            </div>
+            <div class="card-dato">
+                <figure>
+                  <i class="fa-regular fa-clock" style="color: #dde0e4;"></i>
+                </figure>
+                <div class="contenido-card text-white">
+                  <h4>Horario</h4>
+                  <h5 class="text-white-50">4:00-5:30</h5>
+                </div>
+            </div>
+            <div class="card-dato">
+              <figure>
+                <i class="fa-solid fa-phone" style="color: #dde0e4;"></i>
+              </figure>
+              <div class="contenido-card text-white">
+                <h4>Teléfono</h4>
+                <h5 class="text-white-50">9621234567</h5>
+              </div>
+          </div>
+            <div class="card-dato">
+                <figure>
+                  <i class="fa-solid fa-person-breastfeeding" style="color: #dde0e4;"></i>
+                </figure>
+                <div class="contenido-card text-white">
+                  <h4>Nombre del tutor</h4>
+                  <h5 class="text-white-50">Ingrid Corazon Garcia Ordoñez</h5>
+                </div>
+            </div>
+            <div class="card-dato">
+                <figure>
+                  <i class="fa-solid fa-phone" style="color: #dde0e4;"></i>
+                </figure>
+                <div class="contenido-card text-white">
+                  <h4>Teléfono del tutor</h4>
+                  <h5 class="text-white-50">9622899278</h5>
+                </div>
+            </div>
+            <div class="card-dato">
+                <figure>
+                  <i class="fa-solid fa-phone" style="color: #dde0e4;"></i>
+                </figure>
+                <div class="contenido-card text-white">
+                  <h4>Teléfono de emergencia</h4>
+                  <h5 class="text-white-50">9622899278</h5>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="line-section d-sm-none d-md-flex  border border-white border-2 opacity-50 m-auto mb-5">
+
+    <div class="container container-options">
+      <h2 class="text-center text-white mb-4">¿Qué deseas hacer hoy?</h2>
+      <div class="container-card d-flex flex-column flex-md-row justify-content-center align-items-center pb-5">
+        <div class="card col-md-3 col-sm-8">
+          <a href="">
+            <figure>
+              <i class="fa-solid fa-receipt"></i>
+            </figure>
+            <div class="contenido-card">
+              <h5>Generar referencia de pago</h5>
+            </div>
+          </a>
+        </div>
+        <div class="card col-md-3 col-sm-8">
+          <a href="">
+            <figure>
+              <i class="fa-solid fa-file-pen"></i>
+            </figure>
+            <div class="contenido-card">
+              <h5>Modificar información personal</h5>
+            </div>
+          </a>
+        </div>
+        <div class="card col-md-3 col-sm-8">
+          <a href="">
+            <figure>
+              <i class="fa-solid fa-shield"></i>
+            </figure>
+            <div class="contenido-card">
+              <h5>Modificar contraseña actual</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-group">
+      <div class="box-footer">
+        <figure>
+          <img src="assets/img/ECBT-11.png" alt="">
+        </figure>
+      </div>
+      <div class="box-footer">
+        <h2>Sobre nosotros</h2>
+        <p>
+          <i class="fa-solid fa-envelope" style="color: #bbbec3;"></i> andreapaz@gmail.com
+        </p>
+        <p>
+          <i class="fa-solid fa-phone" style="color: #bbbec3;"></i>
+          962-149-5215
+        </p>
+        <p>
+          <i class="fa-solid fa-phone" style="color: #bbbec3;"></i>
+          962-118-0352
+        </p>
+      </div>
+      <div class="box-footer">
+        <h2>¡Contáctanos!</h2>
+        <div class="social-networks">
+          <a href="https://www.facebook.com/ecbtballet" class="fb-network" target="_blank">
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+          </a>
+          <a href="https://www.instagram.com/ecbtballet/" class="ig-network" target="_blank">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+          </a>
+          <a href="https://wa.me/529621495215" class="wa-network" target="_blank">
+            <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <small>&copy; 2023 <b>Escuela Cubana de Ballet de Tapachula</b> - Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

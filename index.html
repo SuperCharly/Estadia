@@ -4,61 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/sign_up.css">
+    <script src="https://kit.fontawesome.com/6a3af0d5cf.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <form action="procesar.php" method="post">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required><br>
+    <div class="container-fluid">
+        <form class="row g-2 mx-auto" action="procesar.php" method="post">
+            <h4 class="text-center">¡Forma parte de la familia!</h4>
+            <h5 class="text-center">Escuela Cubana de <span>Ballet</span></h5>
+            <div class="mb-3 mt-5">
+                <label class="form-label" for="nombre">Nombre</label>
+            <input class="form-control" type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="mb-3 col-md-4">
+                <label class="form-label" for="correo">Correo electrónico</label>
+            <input class="form-control" type="email" id="correo" name="correo" required>
+            </div>
+            
+            <div class="m-auto mb-3 col-md-3">
+                <label class="form-label" for="contraseña">Contraseña</label>
+                <input class="form-control" type="password" id="contraseña" name="contraseña" required>
+            </div>
 
-    <label for="correo">Correo electrónico:</label>
-    <input type="email" id="correo" name="correo" required><br>
+            <div class="m-auto mb-3 col-md-4">
+                <label class="form-label" for="nombre">Nombre de Usuario</label>
+            <input class="form-control" type="text" id="usuario" name="usuario" required>
+            </div>
+            
+            <div class="mb-3 col-md-3">
+                <label class="form-label" for="fecha_nacimiento">Fecha de Nacimiento</label>
+                <input class="form-control" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
 
-    <label for="contraseña">Contraseña:</label>
-    <input type="password" id="contraseña" name="contraseña" required><br>
+            <div class=" mb-3 m-auto col-md-5">
+              <label class="form-label" for="telefono_tutor">Número Telefónico de Emergencia</label>
+              <input class="form-control" type="tel" id="telefono_emergencia" name="telefono_emergencia" maxlength="10">
+          </div>
 
-    <label for="nombre">Nombre de Usuario:</label>
-    <input type="text" id="usuario" name="usuario" required><br>
+            <!-- Campos para el tutor (inicialmente oculto y deshabilitado) -->
+            <div class="input-group row mb-3 col-md-4" id="tutor_fields" style="display: none;">
+                <div class="row m-auto mb-3 col-md-7">
+                  <label class="form-label" for="nombre_tutor">Nombre de Tutor</label>
+                  <input class="form-control" type="text" id="nombre_tutor" name="nombre_tutor">
+                </div>
 
-    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+                <div class="row m-auto mb-3 col-md-5">
+                  <label class="form-label" for="telefono_tutor">Número Telefónico del Tutor</label>
+                  <input class="form-control" type="tel" id="telefono_tutor" name="telefono_tutor" maxlength="10">
+                </div>
+            </div>
+            <div class="row mb-3 col-md-4" id="telefono_field" style="display: none;">
+                <label class="form-label" for="telefono">Número Telefónico</label>
+                <input class="form-control" type="tel" id="telefono" name="telefono" maxlength="10">
+            </div>
+            
+            <div class="m-auto mb-3 col-md-12">
+              <label class="form-label" for="direccion">Dirección</label>
+              <input class="form-control" type="text" id="direccion" name="direccion" placeholder="Especifica tanto tu colonia como las calles y número de casa" required>
+            </div>
 
-    <label for="direccion">Dirección:</label>
-    <input type="text" id="direccion" name="direccion" required><br>
+            <div class="mb-3 col-md-6">
+                <label class="label-nivel form-label" for="nivel">Nivel</label>
+                <select class="select-nivel form-select" id="nivel" name="nivel">
+                    <option value="disabled">Selecciona...</option>
+                    <option value="1">Baby Ballet (2.5-4 años)</option>
+                    <option value="2">Pre Ballet (4-5 años)</option>
+                    <option value="3">Principiante (6 años en adelante)</option>
+                    <option value="4">Intermedio 1 (Principios técnicos)</option>
+                    <option value="5">Intermedio 2 (Previo Conocimiento tecnico)</option>
+                    <option value="6">Avanzados</option>
+                    <!-- Agrega opciones para otros niveles aquí -->
+                </select>
+            </div>
 
-    <div id="telefono_field" style="display: none;">
-        <label for="telefono">Número Telefónico:</label>
-        <input type="tel" id="telefono" name="telefono"><br>
+            
+            <div class=" mb-3 col-md-6">
+              <label class="form-label" for="horarios" id="labelHorario" style="display: none;">Horario</label>
+              <select class="form-select" id="horarios" name="horarios" style="display: none;">
+                  <option value="disabled">Selecciona...</option>
+                  <option value="1">Opción 1</option>
+                  <option value="2">Opción 2</option>
+                  <option value="3">Opción 3</option>
+                  <option value="4">Opción 4</option>
+                  <option value="5">Opción 5</option>
+                  <option value="6">Opción 6</option>
+                  <!-- Agrega opciones para otros horarios aquí -->
+              </select>
+            </div>
+            <!-- Campo de costo (inicialmente oculto y deshabilitado) -->
+            <div class="m-auto col-md-3">
+                <label class="form-label" for="costo" id="labelCosto" style="display:none;">Costo</label>
+                <input class="form-control" type="text" id="costo" name="costo" disabled style="display:none; ">
+            </div>
+            
+            <div class="mt-lg-4">
+            <input class="btn btn-success" type="submit" value="Registrar">
+            </div>
+        </form>
     </div>
 
-    <label for="nivel">Nivel:</label>
-    <select id="nivel" name="nivel">
-        <option value="1">Baby Ballet (2.5-4 años)</option>
-        <option value="2">Pre Ballet (4-5 años)</option>
-        <option value="3">Principiante (6 años en adelante)</option>
-        <option value="4">Intermedio 1 (Principios técnicos)</option>
-        <option value="5">Intermedio 2 (Previo Conocimiento tecnico)</option>
-        <option value="6">Avanzados</option>
-        <!-- Agrega opciones para otros niveles aquí -->
-    </select><br>
+    <footer>
+        <div class="footer-group">
+          <div class="box-footer">
+            <figure>
+              <img src="assets/img/ECBT-11.png" alt="">
+            </figure>
+          </div>
+          <div class="box-footer">
+            <h2>Sobre nosotros</h2>
+            <p>
+              <i class="fa-solid fa-envelope" style="color: #bbbec3;"></i> andreapaz@gmail.com 
+            </p>
+            <p>
+              <i class="fa-solid fa-phone" style="color: #bbbec3;"></i>
+              962-149-5215
+            </p>
+            <p>
+              <i class="fa-solid fa-phone" style="color: #bbbec3;"></i>
+              962-118-0352 
+            </p>
+          </div>
+          <div class="box-footer">
+            <h2>¡Contáctanos!</h2>
+            <div class="social-networks">
+              <a href="https://www.facebook.com/ecbtballet" class="fb-network" target="_blank">
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+              </a>
+              <a href="https://www.instagram.com/ecbtballet/" class="ig-network" target="_blank">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+              </a>
+              <a href="https://wa.me/529621495215" class="wa-network" target="_blank">
+                <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <small>&copy; 2023 <b>Escuela Cubana de Ballet de Tapachula</b> - Todos los derechos reservados.</small>
+        </div>
+      </footer>
+  
 
-    <!-- Campo de costo (inicialmente oculto y deshabilitado) -->
-    <label for="costo" id="labelCosto" style="display:none;">Costo:</label>
-    <input type="text" id="costo" name="costo" disabled style="display:none;"><br>
-
-    <label for="telefono_tutor">Número Telefónico de Emergencia:</label>
-    <input type="tel" id="telefono_emergencia" name="telefono_emergencia"><br>
-
-    <div id="tutor_fields" style="display: none;">
-        <label for="nombre_tutor">Nombre de Tutor:</label>
-        <input type="text" id="nombre_tutor" name="nombre_tutor"><br>
-
-        <label for="telefono_tutor">Número Telefónico del Tutor:</label>
-        <input type="tel" id="telefono_tutor" name="telefono_tutor"><br>
-    </div>
-
-    <input type="submit" value="Registrar">
-</form>
-
-<script src="javascript/funciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="assets/javascript/sign_up.js"></script>
+    <script src="assets/javascript/funciones.js"></script>
 </body>
 </html>

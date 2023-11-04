@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E1E2E6;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-fluid{
+    width: 60%;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.ventajas-content{
+    text-align: center;
+  }
+  
+  .ventajas-content h2{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .ventajas-group1{
+    display: inline-block;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .Ventaja{
+    padding: 20px 25px;
+    display: flex;
+  }
+
+  .Ventaja-equilibrio{
+    padding: 20px 10px;
+    display: flex;
+  }
+
+  .equilibrio{
+    width: 125px;
+  }
+
+  .Ventaja-equilibrio h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+  }
+
+  .Ventaja img{
+    width: 100px;
+  }
+  
+  .Ventaja h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+  }
+
+  .service{
+    padding: 20px 25px;
+    display: flex;
+  }
+  .service img{
+    width: 110px;
+    padding: 35px;
+    border-radius: 50%;
+    background-color: #0A141D;
+  }
+  
+  .service h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+  }
+
+
+
+footer{
+    width: 100%;
+    background-color: #0A141D;
+  }
+  
+  footer .footer-group{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  footer figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  footer figure img{
+  width: 250px;
+  }
+  footer h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  footer p{
+    color: #EFEFEF;
+    margin-bottom: 10px;
+  }
+  footer .footer-group .social-networks a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color: #0D2033;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  footer .footer-group .social-networks .fb-network:hover{
+    background-color: #3b5998;
+  }
+  footer .footer-group .social-networks .ig-network:hover{
+    background-color: #F77737;
+  
+  }
+  footer .footer-group .social-networks .wa-network:hover{
+    background-color: #25D366;
+  }
+  footer .copyright{
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+  footer .copyright small{
+    font-size: 15px;
+  }
+  
+/* Responsive para la sección principal */
+@media (max-width: 991px){
+    .container-fluid{
+      width: 80% !important;
+    }
+    .container-fluid img{
+        width: 150px;
+    }
+    .Ventaja{
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .Ventaja-equilibrio{
+        display: inline-block;
+        margin-top: 15px;
+    }
+    /* form label{
+        font-size: 14px;
+    } */
+}
+
+/* Responsive para la sección Footer*/
+@media (max-width: 800px){
+  footer .footer-group{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}

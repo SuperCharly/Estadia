@@ -5,11 +5,11 @@ document.getElementById("fecha_nacimiento").addEventListener("change", function 
 
     // Comparar si la edad es menor a 18 años
     if (edad < 18) {
-        document.getElementById("tutor_fields").style.display = "block";
+        document.getElementById("tutor_fields").style.display = "inline-flex";
         document.getElementById("telefono_field").style.display = "none";
     } else {
         document.getElementById("tutor_fields").style.display = "none";
-        document.getElementById("telefono_field").style.display = "block";
+        document.getElementById("telefono_field").style.display = "inline-flex";
     }
 });
 
@@ -18,6 +18,9 @@ document.getElementById("fecha_nacimiento").addEventListener("change", function 
     var selectNivel = document.getElementById('nivel');
     var costoField = document.getElementById('costo');
     var labelCosto = document.getElementById('labelCosto');
+    var labelHorario = document.getElementById('labelHorario');
+    var horarioField = document.getElementById('horarios');
+
 
     // Define un objeto que mapea los valores de nivel a sus costos
     var costoNiveles = {
@@ -35,8 +38,11 @@ document.getElementById("fecha_nacimiento").addEventListener("change", function 
     if (costoNiveles[selectedNivel]) {
         // Si el nivel tiene un costo definido, muestre el costo y habilite el campo
         costoField.value = costoNiveles[selectedNivel];
-    costoField.style.display = 'inline-block'; // Mostrar el campo
-    labelCosto.style.display = 'inline-block'; // Mostrar la etiqueta
+    costoField.style.display = 'flex'; // Mostrar el campo
+    labelCosto.style.display = 'flex'; // Mostrar la etiqueta
+    horarioField.style.display = 'flex'; // Mostrar el campo
+    labelHorario.style.display = 'flex'; // Mostrar la etiqueta
+    
         } else {
         // Si el nivel no tiene un costo definido, oculte el campo y la etiqueta
         costoField.style.display = 'none';
